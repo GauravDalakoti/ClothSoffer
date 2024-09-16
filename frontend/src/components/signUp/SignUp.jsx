@@ -12,7 +12,7 @@ function SignUp() {
         e.preventDefault()
 
         try {
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/users/register`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/register`, {
 
                 method: "POST",
                 headers: {

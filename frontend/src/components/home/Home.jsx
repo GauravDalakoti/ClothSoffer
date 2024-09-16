@@ -12,7 +12,7 @@ export default function home() {
 
     ; (async () => {
 
-      const response = await fetch(`https://clothsoffer-backend.vercel.app/api/v1/items/get-all-items`)
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/items/get-all-items`)
 
       const res = await response.json()
       setProducts(res.data)

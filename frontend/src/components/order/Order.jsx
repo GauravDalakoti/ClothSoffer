@@ -16,7 +16,7 @@ function Order() {
 
         (async () => {
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/users/get-current-user`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/get-current-user`, {
 
                 method: "GET",
                 credentials: "include",
@@ -38,7 +38,7 @@ function Order() {
 
     const orderProducts = async () => {
 
-        const response = await fetch(`${process.env.VITE_BACKEND_URL}/v1/orders/order-product`, {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/v1/orders/order-product`, {
 
             method: "POST",
             credentials: "include",

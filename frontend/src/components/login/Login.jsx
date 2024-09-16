@@ -18,7 +18,7 @@ function Login() {
         e.preventDefault()
 
         try {
-            const response = await fetch(`https://clothsoffer-backend.vercel.app/api/v1/users/login`, {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/login`, {
 
                 method: "POST",
                 credentials: 'include',

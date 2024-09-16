@@ -13,7 +13,7 @@ function Kids() {
 
         ; (async () => {
 
-            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/items/get-all-items`)
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/items/get-all-items`)
 
             const res = await response.json()
 

@@ -13,7 +13,7 @@ function Header() {
 
     const handleLogout = async () => {
 
-        const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/users/logout`, {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/logout`, {
 
             method: "POST",
             credentials: "include",
