@@ -25,7 +25,7 @@ function Login() {
 
                     'Content-Type': "application/json"
                 },
-                body: JSON.stringify(user),
+                body: JSON.stringify(userData),
                 credentials: "include"
 
             })
