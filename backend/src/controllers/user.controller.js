@@ -94,8 +94,8 @@ const loginUser = asyncHandler(async (req, res) => {
 
         httpOnly: true,
         secure: true,
-        sameSite: 'Lax',
-        path: "/"
+        sameSite: 'none',
+
     }
 
     return res.status(200)
