@@ -38,7 +38,7 @@ function CardItem({ curitem }) {
     const handleAddToCart = async () => {
 
         try {
-            const response = await fetch("http://localhost:8000/api/v1/carts/add-to-cart", {
+            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/carts/add-to-cart`, {
 
                 method: "POST",
                 credentials: "include",

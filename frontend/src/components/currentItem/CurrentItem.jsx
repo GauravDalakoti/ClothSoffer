@@ -24,7 +24,7 @@ function CurrentItem() {
 
         (async () => {
 
-            const response = await fetch("http://localhost:8000/api/v1/items/get-current-item", {
+            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/items/get-current-item`, {
 
                 method: "POST",
                 headers: {
@@ -43,7 +43,7 @@ function CurrentItem() {
                 setImageIndex(0)
             }
 
-            const response1 = await fetch("http://localhost:8000/api/v1/items/get-related-items", {
+            const response1 = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/items/get-related-items`, {
 
                 method: "POST",
                 credentials: "include",
@@ -90,7 +90,7 @@ function CurrentItem() {
     const handleAddToCart = async () => {
 
         try {
-            const response = await fetch("http://localhost:8000/api/v1/carts/add-to-cart", {
+            const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/carts/add-to-cart`, {
 
                 method: "POST",
                 credentials: "include",

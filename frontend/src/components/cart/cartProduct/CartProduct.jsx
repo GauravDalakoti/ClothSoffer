@@ -45,7 +45,7 @@ function cartProduct({ curitem }) {
 
     const removeToCart = async (name) => {
 
-        const response = await fetch("http://localhost:8000/api/v1/carts/remove-to-cart", {
+        const response = await fetch(`${process.env.VITE_BACKEND_URL}/api/v1/carts/remove-to-cart`, {
 
             method: "POST",
             credentials: "include",
