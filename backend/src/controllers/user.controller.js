@@ -94,7 +94,8 @@ const loginUser = asyncHandler(async (req, res) => {
 
         httpOnly: true,
         secure: true,
-        sameSite: 'none'
+        sameSite: 'none',
+        domain:'clothsoffer.vercel.app'
     }
 
     return res.status(200)
