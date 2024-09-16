@@ -21,11 +21,12 @@ function Login() {
             const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/login`, {
 
                 method: "POST",
-                credentials: 'include',
                 headers: {
-                    "Content-Type": "application/json"
+
+                    'Content-Type': "application/json"
                 },
-                body: JSON.stringify(userData)
+                body: JSON.stringify(user),
+                credentials: "include"
 
             })
 
