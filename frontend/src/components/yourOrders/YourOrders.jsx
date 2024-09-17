@@ -33,7 +33,7 @@ function YourOrders() {
 
     const cancelOrder = async (_id, name) => {
 
-        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/cancel-order`, {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/orders/cancel-order`, {
 
             method: "POST",
             credentials: "include",

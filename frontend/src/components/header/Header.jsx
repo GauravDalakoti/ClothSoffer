@@ -188,7 +188,7 @@ function Header() {
                                 </div>
                             ) : (
                                 <div className='lg:hidden my-auto'>
-                                    <img onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
+                                    <img className='my-auto' onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
                                 </div>
                             )
                         }
