@@ -38,7 +38,7 @@ function Header() {
 
     return (
 
-        <header className='flex justify-around p-4 sticky top-0 z-20 bg-white border-b-4 max-lg:justify-between max-md:px-8'>
+        <header className='flex justify-around items-center p-4 sticky top-0 z-20 bg-white border-b-4 max-lg:justify-between max-md:px-8'>
 
             <div className='flex gap-1 items-center'>
                 <img src={assets.logo} alt="" width={55} />
@@ -128,7 +128,7 @@ function Header() {
 
                             </div>
                         ) : (
-                            <div className='lg:hidden my-auto flex justify-center items-center '>
+                            <div className='lg:hidden my-auto flex'>
                                 <img onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
                             </div>
                         )
