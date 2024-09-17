@@ -43,13 +43,14 @@ function CardItem({ curitem }) {
                 method: "POST",
                 credentials: "include",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Authorization': `Bearer ${localStorage.getItem("AccessToken")}`
                 },
                 body: JSON.stringify(data)
             })
 
             const res = await response.json()
-        
+
 
             if (response.ok) {
 

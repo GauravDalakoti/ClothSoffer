@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 function YourOrders() {
 
     const [orders, setOrders] = useState([])
-    
+
     const fetchCurrentUserOrders = async () => {
 
         const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/orders/current-user-orders`, {
@@ -12,7 +12,8 @@ function YourOrders() {
             credentials: "include",
             headers: {
 
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${localStorage.getItem("AccessToken")}`
             },
         })
 
