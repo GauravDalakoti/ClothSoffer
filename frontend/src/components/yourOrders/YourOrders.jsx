@@ -39,7 +39,8 @@ function YourOrders() {
             credentials: "include",
             headers: {
 
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${localStorage.getItem("token")}`
             },
             body: JSON.stringify({ _id, name })
         })

@@ -30,6 +30,7 @@ function CurrentItem() {
                 headers: {
 
                     "Content-Type": "application/json"
+
                 },
                 body: JSON.stringify({ _id })
             })
@@ -95,7 +96,8 @@ function CurrentItem() {
                 method: "POST",
                 credentials: "include",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Authorization': `Bearer ${localStorage.getItem("token")}`
                 },
                 body: JSON.stringify(currentItem)
             })
