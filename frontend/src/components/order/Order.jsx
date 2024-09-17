@@ -73,7 +73,7 @@ function Order() {
 
                 <div className="flex flex-col gap-2 ">
                     <label htmlFor="name" className='text-xl'>Name</label>
-                    <input className='border-2 border-black w-[40vw] outline-none rounded-lg py-2 px-4 max-lg:w-[75vw]' id='name' type="text" value={currentUserDetals.name || "name"} readOnly />
+                    <input className='border-2 border-black w-[40vw] outline-none rounded-lg py-2 px-4 max-lg:w-[75vw]' id='name' type="text" value={currentUserDetals.name} readOnly />
                 </div>
                 <div className="flex flex-col gap-2 ">
                     <label htmlFor="phone" className='text-xl'>Phone Number</label>
