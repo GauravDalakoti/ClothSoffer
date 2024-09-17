@@ -128,7 +128,7 @@ function Header() {
 
                             </div>
                         ) : (
-                            <div className='lg:hidden my-auto '>
+                            <div className='lg:hidden my-auto flex justify-center items-center '>
                                 <img onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
                             </div>
                         )
@@ -188,7 +188,7 @@ function Header() {
                                 </div>
                             ) : (
                                 <div className='lg:hidden my-auto'>
-                                    <img className='my-auto' onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
+                                    <img onClick={handleDisplayMenu} src={assets.menu} alt="" width={30} />
                                 </div>
                             )
                         }
