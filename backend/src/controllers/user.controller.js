@@ -98,7 +98,6 @@ const loginUser = asyncHandler(async (req, res) => {
         domain: ".clothsoffer.vercel.app",
         expires: new Date(Date.now() + 900000),
         path: "/"
-
     }
 
     return res.status(200)
