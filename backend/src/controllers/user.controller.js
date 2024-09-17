@@ -94,9 +94,10 @@ const loginUser = asyncHandler(async (req, res) => {
 
         secure: true,
         httpOnly: true,
-        expires: new Date(new Date().getTime() + (1000 * 60 * 60 * 24 * 7)),
         sameSite: "none",
-        domain: ".clothsoffer.vercel.app"
+        domain: ".clothsoffer.vercel.app",
+        expires: new Date(Date.now() + 900000),
+        path: "/"
 
     }
 
