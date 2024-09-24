@@ -37,7 +37,7 @@ function AddProduct() {
         formData.append("category", product.category)
         formData.append("rating", product.rating)
 
-        const response = await fetch("http://localhost:8000/api/v1/items/add-new-item", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/items/add-new-item`, {
 
             method: "POST",
             body: formData

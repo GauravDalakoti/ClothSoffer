@@ -6,7 +6,7 @@ function Order() {
 
     const fetchOrders = async () => {
 
-        const response = await fetch("http://localhost:8000/api/v1/orders/get-all-orders", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/orders/get-all-orders`, {
 
             method: "GET",
             credentials: "include",
@@ -33,7 +33,7 @@ function Order() {
 
     const orderConfirm = async (_id) => {
 
-        const response = await fetch("http://localhost:8000/api/v1/orders/order-confirm", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/orders/order-confirm`, {
 
             method: "POST",
             credentials: "include",

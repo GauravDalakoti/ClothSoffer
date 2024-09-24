@@ -21,7 +21,7 @@ function Login() {
         e.preventDefault()
         console.log(userData)
 
-        const response = await fetch("http://localhost:8000/api/v1/admin/admin-login", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/admin/admin-login`, {
 
             method: "POST",
             credentials: "include",

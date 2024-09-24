@@ -9,7 +9,7 @@ function AllProducts() {
 
     (async () => {
 
-      const response = await fetch("http://localhost:8000/api/v1/items/get-all-items", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/items/get-all-items`, {
 
         method: "GET",
         headers: {
@@ -35,7 +35,7 @@ function AllProducts() {
 
   const removeItem = async (_id) => {
 
-    const response = await fetch("http://localhost:8000/api/v1/items/remove-item", {
+    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/items/remove-item`, {
 
       method: "POST",
       headers: {

@@ -17,7 +17,7 @@ function Header() {
 
     const handleLogout = async () => {
 
-        const response = await fetch("http://localhost:8000/api/v1/admin/admin-logout", {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/admin/admin-logout`, {
 
             method: "GET",
             credentials: "include",
