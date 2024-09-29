@@ -9,7 +9,7 @@ const generateAccessTokenAndRefreshToken = async (adminId) => {
 
         const admin = await Admin.findById(adminId)
         const accessToken = admin.generateAccessToken()
-        const refreshToken = admin.generateAccessToken()
+        const refreshToken = admin.generateRefreshToken()
 
         admin.refreshToken = refreshToken
         await admin.save({ validateBeforeSave: false })

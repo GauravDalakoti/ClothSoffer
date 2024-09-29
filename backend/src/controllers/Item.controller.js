@@ -90,7 +90,7 @@ const getRelatedItems = asyncHandler(async (req, res) => {
     const { _id } = req.body
 
     const item = await Item.findById(_id)
-  
+
     if (!item) {
 
         throw new ApiError(400, " invalid id")
