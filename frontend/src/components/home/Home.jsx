@@ -23,7 +23,7 @@ export default function home() {
   }, [])
 
   return (
-    <div className='min-w-[86vh]'>
+    <div className='min-h-[86vh]'>
 
       <Toast />
       <Offer />
