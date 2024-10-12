@@ -20,7 +20,7 @@ function AllProduct() {
     }, [])
 
     return (
-        <div className='w-[95vw] mx-auto p-2'>
+        <div className='w-[95vw] mx-auto p-2 min-h-[86vh]'>
             <Toast />
 
             <div className='text-3xl font-semibold pb-6 text-center'>Latest Trending Clothes</div>

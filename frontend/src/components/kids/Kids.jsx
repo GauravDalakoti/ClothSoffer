@@ -25,7 +25,7 @@ function Kids() {
     }, [])
 
     return (
-        <div>
+        <div className='min-h-[86vh]'>
 
             <Toast />
             <img src={assets.kids} alt="" />

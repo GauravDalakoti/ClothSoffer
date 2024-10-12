@@ -23,7 +23,7 @@ function Men() {
   }, [])
 
   return (
-    <div>
+    <div className='min-h-[86vh]'>
 
       <Toast />
       <img src={assets.men} alt="" />
